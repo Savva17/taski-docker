@@ -40,9 +40,9 @@ jobs:
     - name: Test with flake8 and django tests
       # Добавляем env-переменные для доступа к БД
       env:
-          POSTGRES_USER: savva17
-          POSTGRES_PASSWORD: Morozov13
-          POSTGRES_DB: postgres_db
+        POSTGRES_USER: savva17
+        POSTGRES_PASSWORD: Morozov13
+        POSTGRES_DB: postgres_db
         # Сервер БД запущен в Docker, но его порт проброшен на хост
         # Поэтому подключаемся к 127.0.0.1:5432
         DB_HOST: 127.0.0.1
